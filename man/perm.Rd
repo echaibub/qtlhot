@@ -46,11 +46,22 @@ Verbose output if \code{TRUE}.
 }
 }
 \value{
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
+  \item{max.lod.quant}{
+Matrix of size \code{n.perm} rows representing the permutations, and \code{Nmax} columns 
+representing the hotspot sizes analyzed. Entry ij stores the maximum genome wide qLOD(n) value computed at 
+permutation i using the QTL mapping threshold j. The statistic qLOD(n) corresponds to the nth LOD score in a 
+sample ordered from highest to lowest. Output of the NL.N.perm() function.
+}
+  \item{max.N}{
+Matrix of size \code{n.perm} rows representing the permutations, and \code{length(lod.thrs)} columns 
+representing the QTL mapping thresholds. Entry ij stores the maximum genome wide hotspot size detected at 
+permutation i using the QTL mapping threshold j. Output of the NL.N.perm() function.
+}
+  \item{max.WW}{
+Matrix of size \code{n.perm} rows representing the permutations, and \code{length(lod.thrs)} columns 
+representing the QTL mapping thresholds. Entry ij stores the maximum genome wide hotspot size detected at 
+permutation i using the QTL mapping threshold j. Output of the WW.perm() function.
+}
 }
 \author{
 Elias Chaibub Neto and Brian S Yandell
