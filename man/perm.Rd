@@ -23,25 +23,26 @@ set.to.zero.beyond.drop.int(chr, scanmat, thr, drop = 1.5)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{cross}{
-%%     ~~Describe \code{cross} here~~
+Object of class \code{cross}. See \code{\link[qtl]{read.cross}}.
 }
   \item{Ns}{
-%%     ~~Describe \code{Ns} here~~
+Vector of sizes of hotspots, typically \code{1:Nmax}, with \code{Nmax} determined to be large enough to 
+exceed the largest Breitling alpha critical value.
 }
   \item{n.perm}{
-%%     ~~Describe \code{n.perm} here~~
+Number of permutations to be performed.
 }
   \item{alpha.levels}{
-%%     ~~Describe \code{alpha.levels} here~~
+Vector of significance levels.
 }
   \item{lod.thrs}{
-%%     ~~Describe \code{lod.thrs} here~~
+Vector of LOD thresholds, typically single-trait permutation thresholds for various significance levels.
 }
   \item{drop}{
-%%     ~~Describe \code{drop} here~~
+Drop in LOD score examined. LODs below this drop from the maximum peak for the chromosome will not be scored.
 }
   \item{verbose}{
-%%     ~~Describe \code{verbose} here~~
+Verbose output if \code{TRUE}.
 }
 }
 \value{
